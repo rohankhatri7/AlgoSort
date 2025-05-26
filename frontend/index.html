@@ -14,13 +14,12 @@
                 <input type="text" id="custom-array" placeholder="e.g. 5,3,8,1 or leave blank for random">
             </label>
             <button id="generate">Generate Random Array</button>
-            <label>Algorithm:
-                <select id="algorithm"></select>
-            </label>
+            <div id="algorithm-cards" class="algorithm-cards"></div>
             <span id="algo-info"></span>
             <button id="start">Start Visualization</button>
         </div>
         <div id="visualization"></div>
+        <div id="step-explanation" class="step-explanation"></div>
         <div class="step-controls">
             <button id="prev-step">Previous</button>
             <button id="play-pause">Play</button>
@@ -40,6 +39,15 @@
             <span class="legend-item swapping"></span> Swapping
             <span class="legend-item pivot"></span> Pivot
             <span class="legend-item sorted"></span> Sorted
+        </div>
+    </div>
+    <div id="algo-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-modal">&times;</span>
+            <h2 id="modal-title"></h2>
+            <div id="modal-description"></div>
+            <pre id="modal-pseudocode"></pre>
+            <div id="modal-usecases"></div>
         </div>
     </div>
     <script src="app.js"></script>

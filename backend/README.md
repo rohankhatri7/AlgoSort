@@ -11,6 +11,10 @@ AlgoSort Visualizer is a web application that allows users to visualize and unde
 - Enter a custom array or generate a random one
 - See algorithm time/space complexity and a short description
 - Bar values are displayed for clarity
+- **Step-by-step explanation**: See a dynamic, human-readable description of what's happening at each step (e.g., "Comparing 5 and 8", "Swapping 8 and 3", "Pivot is 7", "Array is fully sorted!")
+- **Algorithm info modal**: Click the algorithm name to open a modal with a detailed description, pseudocode, and real-world use cases
+- **Animated, interactive algorithm selection cards**: Choose your algorithm with visually engaging cards, each with an icon, tooltip, and selection animation
+- **Modern, responsive UI**: Clean, mobile-friendly design with smooth interactions
 
 ## Backend Setup
 
