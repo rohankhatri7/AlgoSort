@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlgoSort Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Algorithm Sort Visualizer</h1>
+        <div class="controls">
+            <label>Array:
+                <input type="text" id="custom-array" placeholder="e.g. 5,3,8,1 or leave blank for random">
+            </label>
+            <button id="generate">Generate Random Array</button>
+            <label>Algorithm:
+                <select id="algorithm"></select>
+            </label>
+            <span id="algo-info"></span>
+            <button id="start">Start Visualization</button>
+        </div>
+        <div id="visualization"></div>
+        <div class="step-controls">
+            <button id="prev-step">Previous</button>
+            <button id="play-pause">Play</button>
+            <select id="speed-select">
+                <option value="1">1x</option>
+                <option value="2">2x</option>
+                <option value="5">5x</option>
+                <option value="10">10x</option>
+            </select>
+            <button id="next-step">Next</button>
+            <span id="step-info"></span>
+        </div>
+        <div class="legend">
+            <strong>Legend</strong>
+            <span class="legend-item unsorted"></span> Unsorted
+            <span class="legend-item comparing"></span> Comparing
+            <span class="legend-item swapping"></span> Swapping
+            <span class="legend-item pivot"></span> Pivot
+            <span class="legend-item sorted"></span> Sorted
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html> 
